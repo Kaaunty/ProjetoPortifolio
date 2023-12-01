@@ -1,0 +1,113 @@
+.formacao {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.formacao-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 1rem;
+}
+
+.faculdade-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px 20px;
+  color: #f5f5f5;
+}
+
+.faculdade {
+  background: black;
+  padding: 30px 20px;
+  border-radius: 4px;
+  line-height: 2;
+  position: relative;
+}
+.faculdade::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(203, 0, 255, 1) 0%,
+    rgba(97, 0, 228, 1) 100%
+  );
+
+  position: absolute;
+  top: 20px;
+  left: -3px;
+}
+.faculdade-instituicao {
+  font-size: 1.125rem;
+  line-height: 1.1;
+}
+
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.cursos {
+  margin-top: 40px;
+}
+.cursos h3::before {
+  content: "";
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  background-image: url("../img/cursos.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.idiomas {
+  margin-top: 20px;
+}
+
+.idiomas h3 ::before {
+  content: "";
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  background-image: url("../img/idiomas.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+}

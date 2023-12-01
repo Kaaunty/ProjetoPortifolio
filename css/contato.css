@@ -1,0 +1,74 @@
+.contato {
+  background-color: black;
+  padding: 50px 20px;
+  color: aliceblue;
+}
+
+.subtitulo-contato {
+  font-size: 8rem;
+
+  line-height: 1;
+  text-transform: uppercase;
+  /* word-break: break-all; */
+  max-width: 4ch;
+}
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-right: 100px;
+  gap: 20px;
+}
+
+.contato-container h1 {
+  font-size: 2rem;
+  line-height: 1.125;
+  margin: 30px;
+  align-self: flex-start;
+  text-align: start;
+  max-width: 30ch;
+}
+
+.contato-container h2 {
+  font-size: 3rem;
+  align-self: flex-end;
+  text-align: start;
+  max-width: 30ch;
+}
+.contato-container h2 a {
+  color: aliceblue;
+  transition: 0.3s;
+}
+
+.contato-container h2 a:hover {
+  color: rebeccapurple;
+}
+
+@media (max-width: 800px) {
+  .subtitulo-contato {
+    font-size: 3rem;
+  }
+  .contato-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-right: 20px;
+    /* gap: 20px; */
+  }
+
+  .contato-container h1 {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    text-align: start;
+    max-width: 30ch;
+  }
+  .contato {
+    padding: 20px;
+  }
+  .contato-container h2 a {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
